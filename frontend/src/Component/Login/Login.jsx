@@ -17,9 +17,8 @@ const Login = () => {
   const { error } = useSelector((state) => state.user);
   const { message } = useSelector((state) => state.like);
 
-  const loginHandler = (e) => {
+  const loginHandler = async(e) => {
     e.preventDefault();
-
     dispatch(loginUser(email, password));
   };
 
