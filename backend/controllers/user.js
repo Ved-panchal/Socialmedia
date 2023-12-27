@@ -50,7 +50,7 @@ exports.login = async (req, res) => {
     try {
         const { email, password } = req.body
 
-        const user = await User.findOne({ email })
+        const user = await User.findOne({ email },{timeout:20000})
             .select('+password')
             .populate('posts followers following')
 
