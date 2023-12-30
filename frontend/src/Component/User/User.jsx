@@ -7,7 +7,7 @@ const User = ({ userId, name, avatar}) => {
   return (
     <Link to={`/user/${userId}`} className='homeUser'>
         <img src={avatar} alt={name} />
-        <Typography>
+        <Typography style={{color:"var(--socials-secondary)",fontWeight:"200"}}>
             {name}
         </Typography>
     </Link>

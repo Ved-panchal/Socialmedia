@@ -26,11 +26,11 @@ const Account = () => {
   const [followingToggle, setFollowingToggle] = useState(false);
   const logoutHandler = () => {
     dispatch(logoutUser());
-    
+
     alert.success("Logged out successfully");
   };
 
-  const deleteProfileHandler = async() => {
+  const deleteProfileHandler = async () => {
     await dispatch(deleteMyProfile());
     dispatch(logoutUser());
   };
@@ -86,25 +86,35 @@ const Account = () => {
           sx={{ height: "8vmax", width: "8vmax" }}
         />
 
-        <Typography variant="h5">{user.name}</Typography>
+        <Typography style={{ color: "white" }} variant="h5">
+          {user.name}
+        </Typography>
 
-        <div>
-          <button onClick={() => setFollowersToggle(!followersToggle)}>
-            <Typography>Followers</Typography>
-          </button>
-          <Typography>{user.followers.length}</Typography>
-        </div>
+        <div className="account-details">
+          <div>
+            <button onClick={() => setFollowersToggle(!followersToggle)}>
+              <Typography>Followers</Typography>
+            </button>
+            <Typography style={{ color: "white" }}>
+              {user.followers.length}
+            </Typography>
+          </div>
 
-        <div>
-          <button onClick={() => setFollowingToggle(!followingToggle)}>
-            <Typography>Following</Typography>
-          </button>
-          <Typography>{user.following.length}</Typography>
-        </div>
+          <div>
+            <button onClick={() => setFollowingToggle(!followingToggle)}>
+              <Typography>Following</Typography>
+            </button>
+            <Typography style={{ color: "white" }}>
+              {user.following.length}
+            </Typography>
+          </div>
 
-        <div>
-          <Typography>Posts</Typography>
-          <Typography>{user.posts.length}</Typography>
+          <div>
+            <Typography style={{ color: "var(--socials-secondary)" }}>Posts</Typography>
+            <Typography style={{ color: "white" }}>
+              {user.posts.length}
+            </Typography>
+          </div>
         </div>
 
         <Button variant="contained" onClick={logoutHandler}>

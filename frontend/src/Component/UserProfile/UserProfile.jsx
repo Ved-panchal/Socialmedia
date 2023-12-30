@@ -11,6 +11,7 @@ import {
 import Loader from "../Loader/Loader";
 import Post from "../Post/Post";
 import User from "../User/User";
+import "./UserProfile.css";
 
 const UserProfile = () => {
   const dispatch = useDispatch();
@@ -115,25 +116,32 @@ const UserProfile = () => {
               sx={{ height: "8vmax", width: "8vmax" }}
             />
 
-            <Typography variant="h5">{user.name}</Typography>
+            <Typography
+              style={{ color: "var(--socials-secondary)" }}
+              variant="h5"
+            >
+              {user.name}
+            </Typography>
 
-            <div>
-              <button onClick={() => setFollowersToggle(!followersToggle)}>
-                <Typography>Followers</Typography>
-              </button>
-              <Typography>{user.followers.length}</Typography>
-            </div>
+            <div className="userProfile-details">
+              <div>
+                <button onClick={() => setFollowersToggle(!followersToggle)}>
+                  <Typography>Followers</Typography>
+                </button>
+                <Typography>{user.followers.length}</Typography>
+              </div>
 
-            <div>
-              <button onClick={() => setFollowingToggle(!followingToggle)}>
-                <Typography>Following</Typography>
-              </button>
-              <Typography>{user.following.length}</Typography>
-            </div>
+              <div>
+                <button onClick={() => setFollowingToggle(!followingToggle)}>
+                  <Typography>Following</Typography>
+                </button>
+                <Typography>{user.following.length}</Typography>
+              </div>
 
-            <div>
-              <Typography>Posts</Typography>
-              <Typography>{user.posts.length}</Typography>
+              <div>
+                <Typography>Posts</Typography>
+                <Typography>{user.posts.length}</Typography>
+              </div>
             </div>
 
             {myProfile ? null : (

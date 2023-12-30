@@ -54,13 +54,13 @@ const NewPost = () => {
 
         {image && <img src={image} alt="post" />}
         <input type="file" accept="image/*" onChange={handleImageChange} />
-        <input
+        <textarea
           type="text"
           placeholder="Caption..."
           value={caption}
           onChange={(e) => setCaption(e.target.value)}
         />
-        <Button disabled={loading} type="submit">
+        <Button style={{color:"white",padding: ".3rem 1rem", margin:"1rem", backgroundColor:"var(--socials-secondary)"}} disabled={loading} type="submit">
           Post
         </Button>
       </form>

@@ -40,8 +40,8 @@ const Login = () => {
   return (
     <div className="login">
       <form className="loginForm" onSubmit={loginHandler}>
-        <Typography variant="h3" style={{ padding: "2vmax" }}>
-          Social Aap
+        <Typography variant="h3" style={{ padding: "2vmax", color:"white" }}>
+          Socials.
         </Typography>
 
         <input
@@ -83,13 +83,13 @@ const Login = () => {
         
 
         <Link to="/forgot/password">
-          <Typography>Forgot Password?</Typography>
+          <Typography style={{color:"white"}} >Forgot Password?</Typography>
         </Link>
 
-        <Button type="submit">Login</Button>
+        <Button style={{color:"white",backgroundColor:"var(--socials-secondary)",padding:".5rem 1rem"}} type="submit">Login</Button>
 
         <Link to="/register">
-          <Typography>New User?</Typography>
+          <Typography style={{color:"white"}}>New User?</Typography>
         </Link>
       </form>
     </div>

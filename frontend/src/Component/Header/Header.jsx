@@ -10,6 +10,8 @@ import {
     Search,
     AccountCircle,
     AccountCircleOutlined,
+    ChatBubble,
+    ChatBubbleOutline
 } from '@mui/icons-material'
 
 const Header = () => {
@@ -20,25 +22,31 @@ const Header = () => {
         <div className="header">
             <Link to="/" onClick={() => setTab("/")}>
             {
-                tab === "/" ? <Home style={{color:"black"}}/> : <HomeOutlined/>
+                tab === "/" ? <Home style={{color:"var(--socials-secondary)"}}/> : <HomeOutlined/>
             }
             </Link>
 
             <Link to="/newpost" onClick={() => setTab("/newpost")}>
             {
-                tab === "/newpost" ? <Add style={{color:"black"}}/> : <AddOutlined/>
+                tab === "/newpost" ? <Add style={{color:"var(--socials-secondary)"}}/> : <AddOutlined/>
             }
             </Link>
             
             <Link to="/search" onClick={() => setTab("/search")}>
             {
-                tab === "/search" ? <Search style={{color:"black"}}/> : <SearchOutlined/>
+                tab === "/search" ? <Search style={{color:"var(--socials-secondary)"}}/> : <SearchOutlined/>
             }
             </Link>
             
             <Link to="/account" onClick={() => setTab("/account")}>
             {
-                tab === "/account" ? <AccountCircle style={{color:"black"}}/> : <AccountCircleOutlined/>
+                tab === "/account" ? <AccountCircle style={{color:"var(--socials-secondary)"}}/> : <AccountCircleOutlined/>
+            }
+            </Link>
+
+            <Link to="/chat" onClick={() => setTab("/chat")}>
+            {
+                tab === "/chat" ? <ChatBubble style={{color:"var(--socials-secondary)"}}/> : <ChatBubbleOutline/>
             }
             </Link>
 

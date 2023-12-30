@@ -19,8 +19,8 @@ const Search = () => {
   return (
     <div className="search">
       <form className="searchForm" onSubmit={submitHandler}>
-        <Typography variant="h3" style={{ padding: "2vmax" }}>
-          Social Aap
+        <Typography variant="h3" style={{ padding: "2vmax",color:"white" }}>
+          Socials.
         </Typography>
 
         <input
@@ -31,7 +31,7 @@ const Search = () => {
           onChange={(e) => setName(e.target.value)}
         />
 
-        <Button disabled={loading} type="submit">
+        <Button style={{color:"white",backgroundColor:"var(--socials-secondary)"}} disabled={loading} type="submit">
           Search
         </Button>
 

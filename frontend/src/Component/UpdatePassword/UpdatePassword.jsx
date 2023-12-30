@@ -34,7 +34,7 @@ const UpdatePassword = () => {
   return (
     <div className="updatePassword">
       <form className="updatePasswordForm" onSubmit={submitHandler}>
-        <Typography variant="h3" style={{ padding: "2vmax" }}>
+        <Typography variant="h3" style={{ padding: "2vmax",color:"white" }}>
           Social Aap
         </Typography>
 
@@ -56,7 +56,7 @@ const UpdatePassword = () => {
           onChange={(e) => setNewPassword(e.target.value)}
         />
 
-        <Button disabled={loading} type="submit">
+        <Button style={{color:"white",backgroundColor:"var(--socials-secondary)"}} disabled={loading} type="submit">
           Change Password
         </Button>
       </form>

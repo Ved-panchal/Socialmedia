@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--background-primary);
 }
 
 .header > a {
@@ -13,11 +14,11 @@
 .header >a >svg {
     font-size: 2vmax;
     transition: all 0.5s;
-    color: rgba(0,0,0, 0.455);
+    color: white;
 }
 
 .header >a >svg:hover {
-    color: black;
+    color: var(--socials-secondary);
     transform: scale(1.2);
 }
 

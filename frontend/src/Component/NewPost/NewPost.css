@@ -1,7 +1,5 @@
 .newPost {
     min-height: 100vh;
-    background-image: linear-gradient(to right, #fff5bc, #cec1ff);
-  
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,7 +8,7 @@
   }
   
   .newPostForm {
-    background-color: white;
+    background-color: var(--background-primary);
     height: 100%;
     width: 50%;
     border-radius: 30px;
@@ -22,17 +20,18 @@
   }
   
   .newPostForm > img {
-    width: 100%;
     object-fit: cover;
   }
   .newPostForm > h3 {
+    color: white;
     margin: 2vmax;
   }
   
-  .newPostForm > input[type="text"] {
-    width: 100%;
+  .newPostForm > textarea {
+    width: 80%;
+    min-width: 300px;
     padding: 1vmax;
-    border-radius: 30px;
+    border-radius: 9px;
     border: none;
     outline: none;
     font: 100 1.2rem "Roboto", sans-serif;

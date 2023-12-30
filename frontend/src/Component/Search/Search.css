@@ -1,7 +1,5 @@
 .search {
     height: 100vh;
-    background-image: linear-gradient(to right, #fff5bc, #cec1ff);
-  
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,12 +8,12 @@
   }
   
   .searchForm {
-    background-color: white;
-    height: 100%;
+    background-color: var(--background-primary);
+    height: 90%;
     width: 50%;
     border-radius: 30px;
     box-sizing: border-box;
-    padding: 2vmax;
+    padding: 1vmax;
     display: flex;
     flex-direction: column;
     align-items: center;

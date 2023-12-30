@@ -6,8 +6,7 @@
   }
   
   .accountleft {
-    background-image: linear-gradient(to right, #fff5bc, #cec1ff);
-  
+    background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,12 +15,16 @@
     overflow-y: auto;
   }
   .accountright {
+    margin: 1rem 2rem 1rem 0rem;
+    border-radius: 9px;
     padding: 2vmax;
     box-sizing: border-box;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    background-color: var(--background-primary);
   }
   
   .accountright img:hover {
@@ -49,22 +52,38 @@
   .accountright > a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.253);
   }
-  .accountright > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1vmax;
-  }
   
-  .accountright > div > button:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.253);
-  }
   .accountright > div > button {
     border: none;
     background-color: white;
     cursor: pointer;
     transition: all 0.5s;
     padding: 0.5vmax 1vmax;
+  }
+
+  .account-details{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    margin: 1rem 0rem;
+  }
+
+  .account-details > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .3rem;
+  }
+
+  .accountright > .account-details > div > button{
+    color: var(--socials-secondary);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .accountright > div > button:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.253);
   }
   
   @media screen and (max-width: 600px) {

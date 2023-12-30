@@ -68,6 +68,9 @@ const Home = () => {
                 )}
             </div>
             <div className="homeright">
+            <div className='homeright-heading'>
+                <h3>Suggestions.</h3>
+            </div>
                 {users && users.length > 0 ? (
                     users.map((user) => (
                         <User
@@ -78,7 +81,7 @@ const Home = () => {
                         />
                     ))
                 ) : (
-                    <Typography>No Users Yet</Typography>
+                    <Typography style={{color:"white"}}>No Users Yet</Typography>
                 )}
             </div>
         </div>

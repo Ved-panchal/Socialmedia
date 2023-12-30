@@ -1,4 +1,22 @@
+:root{
+    --socials-primary: rgb(29, 155, 240);
+    --socials-secondary: rgb(255, 83, 107);
+    --background-primary: rgb(21, 17, 31);
+    --socials-text-light: white;
+    --socials-primary-transition: all 200ms ease-in-out;
+  }
+
+
 * {
     margin: 0%;
     padding: 0%;
+}
+
+body{
+    background-color: black;
+    font-family: sans-serif;
+
+}
+::-webkit-scrollbar{
+    display: none;
 }

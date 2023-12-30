@@ -69,7 +69,7 @@ const UpdateProfile = () => {
   ) : (
     <div className="updateProfile">
       <form className="updateProfileForm" onSubmit={submitHandler}>
-        <Typography variant="h3" style={{ padding: "2vmax" }}>
+        <Typography variant="h3" style={{ padding: "2vmax",color:"white" }}>
           Social Aap
         </Typography>
 
@@ -99,7 +99,7 @@ const UpdateProfile = () => {
           onChange={(e) => setEmail(e.target.value)}
         />
 
-        <Button disabled={updateLoading} type="submit">
+        <Button style={{color:"white",backgroundColor:"var(--socials-secondary)"}} disabled={updateLoading} type="submit">
           Update
         </Button>
       </form>

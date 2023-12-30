@@ -49,8 +49,8 @@ const Register = () => {
     return (
         <div className="register">
             <form className="registerForm" onSubmit={submitHandler}>
-                <Typography variant="h3" style={{ padding: '2vmax' }}>
-                    Social Aap
+                <Typography variant="h3" style={{ padding: '2vmax', color:"white" }}>
+                    Socials.
                 </Typography>
 
                 <Avatar
@@ -111,10 +111,10 @@ const Register = () => {
                 </div>
 
                 <Link to="/">
-                    <Typography>Already Signed Up? Login Now</Typography>
+                    <Typography style={{color:"white"}} >Already Signed Up? Login Now</Typography>
                 </Link>
 
-                <Button disabled={loading} type="submit">
+                <Button style={{color:"white",backgroundColor:"var(--socials-secondary)",padding:".5rem 1rem"}} disabled={loading} type="submit">
                     Sign Up
                 </Button>
             </form>
