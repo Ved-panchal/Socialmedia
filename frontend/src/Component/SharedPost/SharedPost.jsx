@@ -43,22 +43,21 @@ const SharedPost = () => {
 
     return postLoading || !dataReady ? (
         <Loader />
-    ) : (
-        <div className="postsection">
+    ) : (<div className='postsection'>
             {
                 <Post
-                    postId={post._id}
-                    caption={post.caption}
-                    postImage={post.image.url}
-                    likes={post.likes}
-                    comments={post.comments}
-                    ownerImage={post.owner.avatar.url}
-                    ownerName={post.owner.name}
-                    ownerId={post.owner._id}
-                    isShared={true}
+                postId={post._id}
+                caption={post.caption}
+                postImage={post.image.url}
+                likes={post.likes}
+                comments={post.comments}
+                ownerImage={post.owner.avatar.url}
+                ownerName={post.owner.name}
+                ownerId={post.owner._id}
+                isShared={true}
                 />
             }
-        </div>
+            </div>
     )
 }
 

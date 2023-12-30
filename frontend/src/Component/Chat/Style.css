@@ -1,0 +1,96 @@
+.Chatpage {
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+    padding: 10px;
+}
+
+.searchUser {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchFormUser {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+    width: 90%;
+}
+
+.input-container {
+    position:relative;
+    width: 90%;
+    display: flex;
+}
+
+.input-container label {
+    position:absolute;
+	top:0px;
+	left:0px;
+	font-size:16px;
+	color:white;	
+    pointer-events: none;
+	transition: all 0.5s ease-in-out;
+}
+
+.input-container input{ 
+    border:0;
+    border-bottom:1px solid #555;  
+    background:transparent;
+    width:100%;
+    padding:8px 0 5px 0;
+    font-size:16px;
+    color:white ;
+}
+
+.input-container Button {
+    transition: 0.1s ease-in-out;
+}
+
+.input-container Button:hover {
+    transform: translateY(-2px);
+    
+}
+
+.input-container input:focus{ 
+   border:none;	
+   outline:none;
+   border-bottom:1px solid #e74c3c;	
+}
+
+.input-container input:focus ~ label,
+.input-container input:valid ~ label{
+	top:-12px;
+	font-size:12px;
+	
+}
+
+.Usermessage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    margin: 5px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.Usermessage:hover {
+    transform: translateY(-5px);
+    background-color: black;
+}
+
+.Userdetails {
+    height: 70px;
+    width: 80%;
+}
+
+.chatMessage {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}

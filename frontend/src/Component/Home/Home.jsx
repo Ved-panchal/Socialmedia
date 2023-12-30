@@ -78,6 +78,7 @@ const Home = () => {
                             userId={user._id}
                             name={user.name}
                             avatar={user.avatar.url}
+                            isChat={false}
                         />
                     ))
                 ) : (

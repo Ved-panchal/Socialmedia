@@ -17,6 +17,7 @@ import UserProfile from "./Component/UserProfile/UserProfile";
 import Search from "./Component/Search/Search";
 import NotFound from "./Component/NotFound/NotFound";
 import SharedPost from "./Component/SharedPost/SharedPost";
+import Chat from "./Component/Chat/Chat";
 function App() {
 
   const dispatch = useDispatch();
@@ -76,7 +77,10 @@ function App() {
           element={isAuthenticated ? <SharedPost/>: <Login/>}
         />
 
+        <Route path ="/chat" element={isAuthenticated ? <Chat/> : <Login/>}/>
+
         <Route path="search" element={<Search />} />
+
 
         <Route path="*" element={<NotFound />} />
       </Routes>

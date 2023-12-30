@@ -6,6 +6,8 @@ import {
     userReducer,
 } from './Reducers/User'
 import { likeReducer, myPostsReducer, uniquePostReducer, userPostsReducer } from './Reducers/Post'
+import { messageReducer } from './Reducers/Message'
+import { chatReducer, createChatReducer } from './Reducers/Chat'
 
 const store = configureStore({
     reducer: {
@@ -17,6 +19,9 @@ const store = configureStore({
         userProfile: userProfileReducer,
         userPosts: userPostsReducer,
         uniquePost: uniquePostReducer,
+        message: messageReducer,
+        chat: chatReducer,
+        createchat: createChatReducer,
     },
 })
 
